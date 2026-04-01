@@ -1,7 +1,7 @@
 import random
 import string
 
-def generate_passward(min_length,numbers=True,special_character=True):
+def generate_password(min_length,numbers=True,special_character=True):
     letters = string.ascii_letters
     digits= string.digits 
     special= string.punctuation
@@ -41,5 +41,5 @@ has_special = input ("Do you want to have special characters (y/n)? ").lower() =
 num_passwords = int(input("How many passwords do you want? "))
 
 for i in range(num_passwords):
-    pwd = generate_passward(min_length, has_number, has_special)
+    pwd = generote_password(min_length, has_number, has_special)
     print(f"Password {i+1}: {pwd}")
